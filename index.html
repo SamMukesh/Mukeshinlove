@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="index.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body bgcolor="black">
+    <img 
+        id="sam" 
+        src="https://webstream.sastra.edu/sastraparentweb/resource/Image/S78694.jpg?auto=compress&cs=tinysrgb&h=10"
+        alt="old"
+    />
+    <div id="mukesam">
+        <img id="mukee" src="./Images/500087100409_91507.jpg" />
+    </div>
+    <img
+        id="muke" 
+        src="https://edu.ieee.org/in-sastra/wp-content/uploads/sites/421/2019/10/Mukesh-288x300.jpeg?auto=compress&cs=tinysrgb&h=350"
+        alt="new"
+    />
+    <div id="general">
+        <h1>
+            <img jsname="R5Zsfb" id="img1" class="TWO2xe" src="https://www.google.com/logos/fnbx/new_years/icon_idle_2021.gif" alt="" data-atf="1" data-frt="0" style="transition: opacity 0.25s ease 0s; opacity: 1;">
+                Happy New Year 2022
+            <img jsname="R5Zsfb" id="img2" class="TWO2xe" src="https://www.google.com/logos/fnbx/new_years/icon_idle_2021.gif" alt="" data-atf="1" data-frt="0" style="transition: opacity 0.25s ease 0s; opacity: 1;">
+        </h1>
+    </div>
+    <script>
+        var m = document.getElementById("muke")
+        var s = document.getElementById("sam")
+        var ms = document.getElementById("mukesam")
+        ms.style.opacity = 0;
+        setTimeout(function(){
+            m.remove();
+        }, 2900);
+        setTimeout(function(){
+            s.remove();
+        }, 2900);
+        setTimeout(function(){
+            ms.style.opacity=1;
+        }, 4000);
+    </script>
+</body>
+</html>
+
+<!-- 
+        var elementToHide = document.getElementById("show");
+        elementToHide.style.alignSelf = "center";
+        elementToHide.style.opacity = 0;
+        var intervalId = setInterval(function(){
+            if(elementToHide.style.opacity >= 1)
+            {
+                clearInterval(intervalId);
+            }else{
+                elementToHide.style.opacity = parseFloat(elementToHide.style.opacity) + 0.1;
+            }
+        },250); -->

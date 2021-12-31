@@ -1,0 +1,63 @@
+.body{
+    background-color: black;
+}
+#img1 {
+    height:50px;
+    width:50px;
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+}
+#img2 {
+    height:50px;
+    width:50px;
+}
+#general{
+    position: absolute;
+    display: inline;
+    color: white;
+    margin-left: 385px;
+    margin-top: 400px;
+    animation: mukesam 20s;
+}
+h1{
+    font-size: 50px;
+}
+#mukesam {
+    position:absolute;
+    margin-left: 500px;
+    animation: mukesam 20s;
+}
+#mukee {
+    height: 350px;
+    width: 350px;
+}
+#sam {
+    position:absolute;
+    height: 350px;
+    width: 350px;
+    animation: linear infinite;
+    animation-name: sam;
+    animation-duration: 4s;
+    animation-iteration-count:1;
+}
+#muke {
+    position:absolute;
+    height: 350px;
+    width: 350px;
+    animation: linear infinite;
+    animation-name: muke;
+    animation-duration: 4s;
+    animation-iteration-count:1;
+}
+@keyframes muke {
+    from{ transform: translateX(1000px);}
+    to{ transform: translateX(500px);}
+}
+@keyframes sam {
+    from{ transform: translateX(0px);}
+    to{ transform: translateX(500px);}
+}
+@keyframes mukesam {
+    from{ opacity: 0;}
+    to{ opacity: 1;}
+}
